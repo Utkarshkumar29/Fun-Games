@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            margin: 0;
+        }
+        canvas
+        {
+            border: 2px solid black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 600px;
+            height: 600px;
+            z-index: -1;
+        }
+        .box
+        {
+            position: fixed;
+            display: flex;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+        } 
+        .container
+        {
+            text-align: center;
+            background-color: chartreuse;
+            padding: 10px;
+            width: 300px;
+        }
+        button
+        {
+            border: 4px solid brown;
+            border-radius: 20px;
+            width: 220px;
+        }
+        h1
+        {
+            font-weight: 800;
+            font-size: 40px;
+        }
+        p
+        {
+            font-size: 30px;
+            font-weight: 200;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="scr"><span>Score:</span><span id="score">0</span></div>
+
+    <div class="box">
+        <div class="container" id="start">
+            <h1 id="final">0</h1>
+            <p>Points</p>
+            <button>Start Game</button>
+        </div>
+    </div>
+    <canvas></canvas>
+    <script src="temp.js"></script>
+</body>
+</html>

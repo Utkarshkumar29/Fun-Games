@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+        .over {
+            z-index: 1;
+            background-color: black;
+            color: white;
+            font-size: 30px;
+            padding: 4px;
+        }
+        .score
+        {
+            position: fixed;
+            color: white;
+            margin: 5px;
+            user-select: none;
+        }
+        button
+        {
+            border: 10px solid aqua;
+            width: 380px;
+            background-color: aqua;
+            color: white;
+            border-radius:20px ;
+            margin: 10px;
+        }
+        .start
+        {
+            position: fixed;
+            display: flex;
+            inset: 0;
+            align-items: center;
+            justify-content: center;
+            user-select: none;
+        }
+        .bgwhite
+        {
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        h1
+        {
+            font-weight: 800;
+            font-size: 40px;
+        }
+        p
+        {
+            font-size: 30px;
+            font-weight: 200;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="score"><span>Score:</span><span id="update">0</span></div>
+
+    <div class="start" id="hide">
+        <div class="bgwhite">
+            <h1 id="final">0</h1>
+            <p>Points</p>
+            <div>
+                <button id="game">Start Game</button>
+            </div>
+        </div>
+    </div>
+    
+    <canvas></canvas>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="lec8.js"></script>
+
+</body>
+
+</html>
